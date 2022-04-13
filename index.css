@@ -498,3 +498,80 @@
     max-width: 470px;
     border-radius: var(--standard-border-radius);
   }
+  /* WHY SWIPE SECTION */
+
+.why-swipe-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: calc(var(--spacing-xl) * 3) 0;
+  }
+  .why-swipe-section .card-container {
+    display: flex;
+    margin: var(--spacing-lg) 0;
+  }
+  
+  .why-swipe-section .card-container .card {
+    width: 25%;
+    padding: 0 var(--spacing-sm) 0 0;
+    margin: 0 var(--spacing-md) 0 0;
+    box-sizing: border-box;
+  }
+  
+  .why-swipe-section .secondary-text {
+    color: var(--text-dark);
+  }
+  
+  /* GLOBAL SECTION */
+  .global-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: var(--text-light);
+    position: relative;
+    padding: calc(var(--spacing-xl) * 3) 0 0 0;
+  }
+  
+  .global-section::before {
+    content: "";
+    width: 100%;
+    height: 1200px;
+    background-color: var(--primary-accent);
+    position: absolute;
+    top: -32px;
+    left: 0;
+    transform: skewY(-10deg);
+    z-index: -1;
+  }
+  
+  .global-section a {
+    color: var(--blue-1);
+  }
+  .global-section a:hover {
+    color: var(--text-light);
+  }
+  
+  .global-section .card-container {
+    display: flex;
+    margin: calc(var(--spacing-xl) * 2) 0;
+  }
+  .global-section .card-container .card {
+    width: 25%;
+    box-sizing: border-box;
+    padding: 0 var(--spacing-sm) 0 0;
+    margin: 0 var(--spacing-md) 0 0;
+  }
+  
+  .global-section .card-container .card h3 {
+    border-left: 2px solid var(--blue-1);
+    padding: 0 0 0 var(--spacing-sm);
+    line-height: 28px;
+  }
+  
+  #globe {
+    max-width: 844px;
+    opacity: 25%;
+    position: absolute;
+    top: 10%;
+  }
+  
