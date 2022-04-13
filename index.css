@@ -347,3 +347,87 @@
     height: 628px;
     transform: translate(32px, -32px);
   }
+
+  /* Partners Section */
+.partners-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .partners-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin: var(--spacing-xl) 0;
+    column-gap: var(--spacing-md);
+    row-gap: var(--spacing-lg);
+  }
+  
+  .partners-grid img {
+    height: 60px;
+    place-self: center;
+  }
+  
+  /* UNIFIED PLATFORM SECTION */
+  
+  .unified-platform-section {
+    padding: var(--spacing-xl) 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: var(--bg-light);
+  }
+  
+  .unified-platform-section h2 {
+    width: 50%;
+    margin-bottom: var(--spacing-md);
+  }
+  
+  .unified-platform-section .primary-button {
+    background-color: var(--purple-1);
+    margin: var(--spacing-md) 0;
+  }
+  .unified-platform-section .primary-button:hover {
+    background-color: var(--primary-accent);
+  }
+  
+  /* GRAPHIC GRID SECTION */
+  .graphic-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: var(--bg-light);
+  }
+  .graphic-grid {
+    display: grid;
+    grid-template-areas:
+      "card slack slack"
+      "phone slack slack"
+      "phone dash dash";
+    grid-gap: var(--spacing-lg);
+    padding: var(--spacing-lg) 0;
+  }
+  
+  #credit-card {
+    grid-area: card;
+    width: 100%;
+    box-shadow: var(--standard-box-shadow);
+    border-radius: var(--standard-border-radius);
+  }
+  #slack-invoice {
+    grid-area: slack;
+    width: 100%;
+    box-shadow: var(--standard-box-shadow);
+    border-radius: var(--standard-border-radius);
+  }
+  
+  #phone {
+    grid-area: phone;
+    width: 100%;
+  }
+  #dash {
+    grid-area: dash;
+    width: 100%;
+    box-shadow: var(--standard-box-shadow);
+    border-radius: var(--standard-border-radius);
+  }
